@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讨论社区</title>
+    <link rel="icon" href="Timage/logowang.png">
+    <link rel="stylesheet" type="text/css" href="Tcss.css">
+    <link rel="stylesheet" type="text/js" href="talk.js">
+</head>
+<body>
+    <div class="top">
+        <div title="下载链接">
+        </div>
+        <div class="top_links">
+            <img src="Timage/top_logo.png">
+            <ul>    
+                <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">&nbsp;角色介绍&nbsp;</a></li>
+                <li><a href="#">&nbsp;赛事中心&nbsp;</a></li>
+                <li><a href="#">&nbsp;游戏介绍&nbsp;</a></li>
+                <li><a class="nav-active" href="#">&nbsp;论坛社区&nbsp;</a></li>
+             </ul>
+        </div>
+        <div class="QR-code">
+            <div class="QR-code1"></div>
+            <div class="QR-code2">
+                <p>扫码下载游戏,</p>
+                <p>来和妲己玩耍吧~</p>
+            </div>
+            <div class="QR-code3">  
+                <p>下载游戏</p>    
+                <div class="p-color">下载游戏</div>
+            </div>
+        </div>
+        <!-- 右边二维码下拉隐藏 -->
+        <script>
+            const QRcode = document.querySelector(".QR-code")
+            var onwheel = function(e){
+            var _log = "",
+                _ie9 = navigator.userAgent.indexOf("MSIE 9.0") > 0,
+                _h = _ie9 ? window.innerHeight : document.body.clientHeight;  //兼容IE9
+            _log += "deltaY:" + e.deltaY;
+            _log += "|wheelDelta:" + e.wheelDelta;
+            _log += "|detail:" + e.detail;   
+            _log += "|H:" + _h;
+            if (window.pageYOffset > 124){
+                QRcode.style.opacity = 0;
+                QRcode.style.transition = "0.8s ease";
+            };
+            if (window.pageYOffset < 124){
+                QRcode.style.opacity = 1;
+                QRcode.style.transition = "0.8s ease";
+            };};
+            // console.log(window.pageYOffset);};
+            document.addEventListener("wheel", onwheel, false);
+        </script>
+        <div class="load">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="news">
+            <ul>
+                <li class="head_a"><a href="https://pvp.qq.com/web201706/newsindex.shtml" target="_blank">
+                    <!-- <div><img src="Timage/in-information(1).jpg" alt="最新资讯"></div> -->
+                    <div class="head_inner">最新资讯</div>
+                </a></li>
+            </ul>  
+            <div class="head_inner1">
+                <ul>
+                    <li class="new_01"><a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596497" target="_blank">
+                        <div class="new_01_p1"><img src="Timage/new_01(1).png" alt="猛犽皮肤设计大赛最佳创意奖">
+                        <!-- <i>推荐</i> -->
+                        </div>
+                        <div class="new_01_p2">猛犽皮肤设计大赛最佳创意奖结果公布，点击查看</div></a></li>    
+                    <li class="new_02"><a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596471" target="_blank">
+                        <div class="new_02_p1"><img src="Timage/new_02(1).jpg" alt="星梦设计大赛">
+                        </div>
+                        <div class="new_02_p2">首届星梦大赛最终投票结果公示，点击查看</div></a></li>
+                    <li class="new_03"><a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596451" target="_blank">
+                        <div class="new_03_p1"><img src="Timage/new_03(1).jpg" alt="互动小任务第22期">
+                        </div>
+                        <div class="new_03_p2">互动小任务第22期-五五亲密度道具方案票选结果公布</div></a></li> 
+                    <li class="new_04"><a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596538" target="_blank">
+                        <div class="new_04_p1"><img src="Timage/new_04(1).png" alt="4月6日抢先服版本更新公告">
+                        </div>
+                        <div class="new_04_p2">4月6日抢先服版本更新公告,点击查看详情</div></a></li> 
+                    <li class="new_05">
+                        <a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596679" target="_blank"><div>【春暖共辰光】活动逐步开启公告</div></a>
+                        <a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596520" target="_blank"><div>赛季末活动来袭！杨玉环-银翎春语上线</div></a>
+                        <a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596015" target="_blank"><div>星梦大赛最终投票开启,大乔星元10选3等你来选</div></a>
+                        <a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595516" target="_blank"><div>街机神作！《合金弹头：觉醒》手游正式定档四月上线！</div></a>
+                        <a href="https://pvp.qq.com/web201706/newsindex.shtml" target="_blank"><div>查看更多>>></div></a>
+                    </li>
+                </ul>   
+            </div>
+        </div>
+    </div>
+     <div class="mid">
+        <div class="video">
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="all_new">
+            <div class="picture_show">
+                <div class="picture_show1">
+                    <a href="https://pvp.qq.com/web201706/newsdetail.shtml?e_code=507884&tid=594588" target="_blank"><img src="Timage/left1.jpeg"></a>
+                    <a href="https://pvp.qq.com/web201706/newsdetail.shtml?e_code=507804&tid=595300" target="_blank"><img src="Timage/left2.jpeg"></a>
+                    <a href="https://pvp.qq.com/web201706/newsdetail.shtml?e_code=507807&tid=596134" target="_blank"><img src="Timage/cc5ed360ab83cb1396ee798b355eb790.jpeg"></a>
+                    <a href="https://pvp.qq.com/web201706/newsdetail.shtml?e_code=507803&tid=594590" target="_blank"><img src="Timage/left4.jpeg"></a>
+                    <a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&e_code=507838&tid=838995" target="_blank"><img src="Timage/left5.jpeg"></a>
+                    <a href="https://pvp.qq.com/web201706/newsdetail.shtml?e_code=507884&tid=594588" target="_blank"><img src="Timage/left1.jpeg"></a>
+                </div>
+                <div class="picture_show2">
+                    <li><a class="button1 active" title="高校精英杯赛">高校精英杯赛</a></li>
+                    <li><a class="button2" title="他们想说 的话">他们想说的话</a></li>
+                    <li><a class="button3" title="高校助威大使">高校助威大使</a></li>
+                    <li><a class="button4" title="高校联赛开赛">高校联赛开赛</a></li>
+                    <li><a class="button5" title="荣耀大话王">荣耀大话王</a></li>
+                </div>
+                <!-- 轮播图 -->
+                <script src="talk.js"></script>
+            </div>
+            <div class="mid_new">
+                <div class="mid_new1">
+                        <li><a class="button_hotNews active" title="热门">热门</a></li>
+                        <li><a class="button_news" title="新闻">新闻</a></li>
+                        <li><a class="button_affiche" title="公告">公告</a></li>
+                        <li><a class="button_activity" title="活动">活动</a></li> 
+                        <li><a title="更多"href="https://pvp.qq.com/web201706/newsindex.shtml" target="_blank">更多</a></li>
+                </div>
+                <div class="mid_new2">
+                    <ul class="one">
+                        <li><a class="hot_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596497"><span>猛犽皮肤设计大赛最佳创意奖结果公布</span></a><em class="data">&emsp;&emsp;&emsp;&nbsp;04/05</em></li>
+                        <li><a class="hot_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596471"><span>首届星梦大赛最终投票结果公示 </span></a><em class="data">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;04/03</em></li>
+                        <li><a class="hot_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596451"><span>互动小任务第22期-五五亲密度道具方案票选...</span></a><em class="data">04/03</em></li>
+                        <li><a class="hot_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596292"><span>互助小任务第22期-五五朋友节专属亲密度道...</span></a><em class="data">03/31</em></li>
+                        <li><a class="hot_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595848"><span>星梦设计大赛优秀创意奖公布</span></a><em class="data">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;03/24</em></li>
+                    </ul>
+                    <ul class="two">
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596497"><span>猛犽皮肤设计大赛最佳创意奖结果公布</span></a><em class="data">&emsp;&emsp;&emsp;&nbsp;04/05</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596451"><span>互动小任务第22期-五五亲密度道具方案票选...</span></a><em class="data">04/03</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596471"><span>首届星梦大赛最终投票结果公示 </span></a><em class="data">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;04/03</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596292"><span>互助小任务第22期-五五朋友节专属亲密度道...</span></a><em class="data">03/31</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596015"><span>星梦大赛最终投票开启，大乔星元10选3等你..</span></a><em class="data">&nbsp;03/27</em></li>
+                    </ul>
+                    <ul class="three">
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=597147"><span>4月13日“东方来客”版本（S31赛季）延迟更..</span></a><em class="data">&nbsp;04/12</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=597063"><span>4月11日体验服停机更新公告</span></a><em class="data">&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;04/11</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596471"><span>4月11日外挂专项打击公告 </span></a><em class="data">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;04/11</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=597066"><span>4月11日挂车行为专项违规处罚公告</span></a><em class="data">&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;04/11</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596015"><span>4月11日游戏内违规签名、攻略信息处罚公告..</span></a><em class="data">&emsp;04/11</em></li>
+                    </ul>
+                    <ul class="four">
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=597070"><span>S31新赛季来袭，姬小满登场</span></a><em class="data">&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;04/11</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596986"><span>《小满奇遇记》活动开启公告</span></a><em class="data">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;04/10</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596804"><span>春韵弦音个性祈愿活动逐步开启公告</span></a><em class="data">&emsp;&emsp;&emsp;&emsp;&emsp;04/07</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596812"><span>【峡谷时选】首季发布好礼活动公告</span></a><em class="data">&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;04/07</em></li>
+                        <li><a class="new_news" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=596807"><span>星梦设计大赛特别创意奖公布</span></a><em class="data">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;04/07</em></li>
+                    </ul>
+                </div>
+                <script>
+                    const button_hotNews = document.querySelector(".button_hotNews");
+                    const button_news = document.querySelector(".button_news");
+                    const button_affiche = document.querySelector(".button_affiche");
+                    const button_activity = document.querySelector(".button_activity");
+                    const button_L = document.querySelector(".mid_new2")
+                    button_hotNews.addEventListener("click", () => {
+                        button_L.style.top = "52px";
+                        button_news.classList.remove("active");
+                        button_hotNews.classList.add("active");
+                        button_affiche.classList.remove("active");
+                        button_activity.classList.remove("active");
+
+                    });
+                    button_news.addEventListener("click", () => {
+                        button_L.style.top = "-230px";
+                        button_news.classList.add("active");
+                        button_hotNews.classList.remove("active");
+                        button_affiche.classList.remove("active");
+                        button_activity.classList.remove("active");
+                    });
+                    button_affiche.addEventListener("click", () => {
+                        button_news.classList.remove("active");
+                        button_hotNews.classList.remove("active");
+                        button_affiche.classList.add("active");
+                        button_activity.classList.remove("active");
+                        button_L.style.top = "-512px";
+                    });
+                    button_activity.addEventListener("click", () => {
+                       button_L.style.top = "-762px";
+                       button_news.classList.remove("active");
+                        button_hotNews.classList.remove("active");
+                        button_affiche.classList.remove("active");
+                        button_activity.classList.add("active");
+                    });
+                </script>
+            </div>
+            <div class="right_object">
+                <ul>
+                    <!-- <li><a href="https://yingdi.qq.com/#/index" target="_blank"><div><img src="Timage/86638782789061.jpg" alt="对局环境"></div></a></li> -->
+                    <li><a href="https://pvp.qq.com/memory/index.html" target="_blank"><div><img src="Timage/239381533097800.png" alt="荣耀传承"></div></a></li>
+                    <li><a href="https://yingdi.qq.com/#/index" target="_blank"><div><img src="Timage/86638782789061.jpg" alt="对局环境"></div></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="button_inf">          
+            <div class="button_info">
+                <span>关于本站</span>
+                <span> |服务条款</span>
+                <span> |游戏招聘</span>
+                <span> |商业合作 </span>
+                <!-- 最下方的二维码 -->
+                <div class="official_code">     
+                    <ul class="changeNormal">
+                        <li class="changeLeft">
+                            <div>
+                                <img class="weixin_show" src="Timage/i_wx_cc3f573.png">
+                                <img class="weixin_hidden" src="Timage/gzh_code.jpg">
+                            </div>
+                            <span>官方微信</span>
+                        </li>
+                        <li class="changeLeft_2">
+                            <div>
+                                <img class="video_show" src="Timage/i_video_847b382.png">
+                                <img class="video_hidden" src="Timage/gzh_code.jpg">
+                            </div>
+                            <span>官方视频号</span>
+                        </li>
+                        <li>
+                            <img class="bottom_lefPicture" src="Timage/left_1.png" >
+                            <img class="bottom_midPicture" src="Timage/middle.png" >
+                            <img class="bottom_rigPicture" src="Timage/right_1.png" >
+                        </li>
+                        <li id="changeRight">
+                            <div>
+                                <img class="camp_hidden" src="Timage/yd_qrcode.jpg">
+                                <img class="camp_show" src="Timage/logo_w.png">
+                            </div>
+                            <span>王者营地</span>
+                        </li>
+                        <li id="changeRight_2">
+                            <div>
+                                <img class="weibo_show" src="Timage/wb_11e3f6b.jpg">
+                                <img class="weibo_hidden" src="Timage/weibo.jpg">
+                            </div>
+                            <span>微博</span>
+                        </li>
+                        <!-- 改变底部二维码小人物 -->
+                        <script>
+                            const bottom_lefPicture = document.querySelector(".bottom_lefPicture");
+                            const bottom_midPicture = document.querySelector(".bottom_midPicture");
+                            const bottom_rigPicture = document.querySelector(".bottom_rigPicture");
+                            const changeLeft = document.querySelector(".changeLeft");
+                            const changeLeft_2 = document.querySelector(".changeLeft_2");
+                            const changeRight = document.getElementById("changeRight");
+                            const changeNormal = document.querySelector(".changeNormal");
+                            const changeRight_2 = document.getElementById("changeRight_2");
+                            changeLeft.addEventListener("mouseenter", () => {
+                                bottom_lefPicture.style.display = "block";
+                                bottom_midPicture.style.display = "none";
+                                bottom_rigPicture.style.display = "none";
+                            });
+                            changeLeft_2.addEventListener("mouseenter", () => {
+                                bottom_lefPicture.style.display = "block";
+                                bottom_midPicture.style.display = "none";
+                                bottom_rigPicture.style.display = "none";
+                                // console.log(66);
+                            });
+                            changeRight.addEventListener("mouseenter", () => {
+                                bottom_rigPicture.style.display = "block";
+                                bottom_midPicture.style.display = "none";
+                                bottom_lefPicture.style.display = "none";
+                            });
+                            changeRight_2.addEventListener("mouseenter", () => {
+                                bottom_rigPicture.style.display = "block";
+                                bottom_midPicture.style.display = "none";
+                                bottom_lefPicture.style.display = "none";
+                            }); 
+                            changeNormal.addEventListener("mouseleave", () => {
+                                bottom_rigPicture.style.display = "none";
+                                bottom_midPicture.style.display = "block";
+                                bottom_lefPicture.style.display = "none";
+                            });   
+                        </script>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

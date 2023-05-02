@@ -1,0 +1,786 @@
+.top
+{
+    position: relative;
+    /* width: 100vw;
+    height: 100vh; */
+    width:1920px;
+    height: 792px;
+    background: url("Timage/back.gif.gif") center repeat-x;
+    background-size:cover;
+    top: 0px;
+}
+.load{
+    position: absolute;
+    /* top: 77%;
+    left: 49%; */
+    left: 950px;
+    top: 577px;
+    width: 55px;
+    height: 55px;
+}
+.load span{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: #bd2020;
+    border-radius: 4px;
+    animation: animate 2s linear infinite;
+}
+@keyframes  animate{
+    0%{
+        top: 0%;
+        left: 0%;
+    }
+    12.5%{
+        top: 0%;
+        left: 50%;
+    }
+    25%{
+        top: 0%;
+        left: 50%;
+    }
+    37.5%{
+        top: 50%;
+        left: 50%;
+    }
+    50%{
+        top: 50%;
+        left: 50%;
+    }
+    62.5%{
+        top: 50%;
+        left: 0%;
+    }
+    75%{
+        top: 50%;
+        left: 0%;
+    }
+    87.5%{
+        top: 0%;
+        left: 0%;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+    }
+}
+.load span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+.load span:nth-child(2)
+{
+    animation-delay: -0.667s;
+    background: #429e88;
+}
+.load span:nth-child(3)
+{
+    animation-delay: -1.33s;
+    background: #e2e67bdf;
+}
+.top_links
+{   
+    position: absolute;
+    width:1920px;
+    height:80px;
+    background-color:rgba(0,0,0,0.3);
+}
+.top_links img
+{
+    height:80px;
+    margin-left:50px;
+    float:left;
+}
+.top_links ul
+{
+    width:1200px;
+    height:300px;
+    list-style-type:none;
+    float:left;
+}
+.top_links ul li
+{
+    width:110px;
+    height:100px;
+    float:left;
+    color:rgb(4, 2, 25);
+   margin-top: 5px;
+    margin-left:80px;
+    text-align: center;
+
+} 
+.top_links ul li a
+{
+    color: rgb(4, 2, 25);
+    font-size: 25px;
+    border-radius:6px;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+
+}
+/* 鼠标悬停事件 */
+.top_links ul li:hover>a {
+    color:rgb(135, 111, 51);
+    /* background-image: url("Timage/num_bg_e2c2e9c.png"); */
+    text-shadow: 5px 0px 5px;
+    background-color: rgb(144, 235, 208, 0.433);
+}
+/* 论坛社区起始化样式 */
+.nav-active
+{   color:rgb(135, 111, 51);
+    /* background-image: url("Timage/num_bg_e2c2e9c(1).png"); */
+    text-shadow: 5px 0px 5px;
+    background-color: rgba(144, 235, 208, 0.433);
+}
+/* 二维码 */
+.QR-code1
+{
+    position:fixed;
+    width:314px;
+    height:494px;
+    left:1400px;
+    top:150px;
+    background-image: url("Timage/r_navBg.png");
+}
+.QR-code2
+{
+    position:fixed;
+    width:165px;    
+    height:145px;
+    left:1490px;
+    top:223px;    
+    background-image: url("Timage/r_dj.png");  
+}
+.QR-code2 p
+{
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+    text-indent: 6px;
+    font-weight: bold;  
+    line-height: 15px;
+    color: #62401b;
+    overflow: hidden;
+}
+.QR-code3
+{
+    position:fixed;          
+    width:150px;    
+    height:150px;
+    left:1530px;
+    top:370px;
+    /* z-index: 999;
+    opacity: 2; */
+    background-image: url("Timage/wzry_qrcode(1).jpg");  
+}
+.QR-code3 p/*实际是一个框*/
+{
+    display: block;
+    position: absolute;
+    /* z-index: -1;
+    opacity: 1; */
+    pointer-events: none;
+    top: -2px;
+    left: 0px;
+    width: 150px;
+    height: 180px;
+    font-size: 15px;        
+    text-indent: 40px;  
+    font-weight: bold;
+    line-height: 330px;
+    color: #0f0801;
+    border:2px solid #429e88;
+    /* background-color:rgb(227, 224, 234); */
+    padding:0;margin: 0;-webkit-margin-before: 0;-webkit-margin-after: 0;
+    overflow: hidden;   
+}   
+.p-color /*添加被覆盖的  下载游戏  */
+{   
+    top: 151px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 152px;
+    height: 30px;
+    font-size: 15px;        
+    text-indent: 40px;  
+    font-weight: bold;
+    line-height: 30px;
+    background-color:#429e88;
+}
+.news /* mid   黑布*/
+{
+    position: relative;
+    width:1228.8px;
+    height:220px;
+    z-index:999;
+    position:absolute;
+    margin-left:350px;
+    /* background-color:rgba(250,220,200,0.3); */
+    background: url("Timage/yinyang.webp") center repeat-x;
+    top:650px;   
+    border-radius:5px;
+}
+.head_a
+{
+    display: block;
+    margin-top: -36px;
+}   
+.head_inner
+{
+    /* 最新资讯 */
+    position: absolute;
+    width: 250.367px;
+    /* height: 5.55vh; */
+    line-height: 40px;
+    margin-left: 457px;
+    /* background-color: rgb(181, 183, 195); */
+    background-image: url("Timage/downbg(1).png");
+    /* margin-top: -2.5vh; */
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    text-align: center; 
+    color: black;
+    font-family: "Microsoft YaHei";
+}
+.head_a :hover>div {
+    color:rgb(135, 111, 51);
+    text-shadow: 5px 0px 5px;
+}
+.head_inner1
+{
+    position: absolute; 
+    width: 1228.8px;
+    height: 180px;
+    left: 0px;
+    top: 25px;
+    /* background-color: greenyellow; */
+    background: url("Timage/order_bg_b5e4f46(2).png");
+
+} 
+.head_inner1 ul li
+{    
+    /* 新闻 */
+    position: relative;
+    float:left;
+    top: 6px;
+    margin-left:43px;
+    display: block;
+    width: 180px;
+    height: 144px;
+    line-height: 11px;
+    text-align: center;
+    /* background-color: greenyellow; */
+    border-radius:6px;
+    background-image: url("Timage/down_bg.png");
+}
+.head_inner1 ul li a
+{
+    color:#a9a3a3;
+    font-size: 12px;
+    text-decoration: none;
+    height: 32px;
+}
+.new_01_p1
+{
+    padding: 4px 4px;
+    overflow: hidden;
+}
+.new_01_p1 img
+{
+    width: 100%;
+    transition: all 0.5s;
+}
+.new_02_p1
+{
+    padding: 4px 4px;
+    overflow: hidden;
+}
+.new_02_p1 img
+{
+    width: 100%;
+    transition: all 0.5s;
+}
+.new_03_p1
+{
+    padding: 4px 4px;
+    overflow: hidden;
+}
+.new_03_p1 img
+{
+    width: 100%;
+    transition: all 0.5s;
+}
+.new_04_p1
+{
+    padding: 4px 4px;
+    overflow: hidden;
+}
+.new_04_p1 img
+{
+    width: 100%;
+    transition: all 0.5s;
+}
+.new_01_p2  
+{
+    font-family: "Microsoft YaHei";
+}
+.new_02_p2
+{
+    font-family: "Microsoft YaHei";
+}
+.new_03_p2
+{
+    font-family: "Microsoft YaHei";
+}
+.new_04_p2
+{
+    font-family: "Microsoft YaHei";
+}
+.new_05 div
+{
+    font-family: "Microsoft YaHei";
+    color:#a9a3a3;
+    font-size: 12px;
+    height: 30px;
+    text-decoration: none;
+    line-height: 15px;
+    text-align: center;
+}  
+/*  最新资讯最下方文字鼠标滑过样式 */
+.head_inner1 ul li a:hover>div {
+    color:rgb(215, 214, 172);
+    text-shadow: 5px 0px 5px;
+}
+.head_inner1 ul li a div:hover>img
+{
+    transform: scale(1.1);
+}
+.bottom
+{
+    /* 下面的绿色背景 */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width:1920px;    
+    height:792px;
+    /* background-color:rgb(250,250,250); */
+    background-image: url("Timage/bg_84419901.jpg");
+    background-size:cover;
+    text-align:center;
+}
+.all_new
+{
+    /* 全部新闻的盒子 */
+    position:relative;
+    width: 1292px;
+    height: 373px;
+    top: 125px;
+    left: 315px;
+    background-image: url("Timage/sl_pop_0139f45_01.png");
+} 
+/* 左边的轮播图 */
+.picture_show
+{
+    position:relative;
+    /* background-color: #000; */
+    overflow: hidden;
+    width: 539.133px;
+    height: 310px;
+    top:32px;   
+    /* display:flex ; */
+    /* margin:0px auto 0; */
+}  
+.picture_show1  
+{
+    position: relative;
+    width: 100%;        
+    height: 100%;
+    left: 0px;
+    /* top:-539.2px; */
+    display:block;
+    transition: 0.5s ease;
+}
+.picture_show1 a 
+{   
+    width: 539.133px;
+    height: 269.6px;
+    position: relative;
+    display: block;
+    
+}
+.picture_show1 a img
+{  
+    width: 100%;
+    height: 269.6px;
+    cursor: pointer;
+    /* float: left; */
+}
+/* 轮播图下方导航 */
+.picture_show2
+{
+    position: absolute;
+    background-color: #101111;
+    overflow: hidden;
+    width: 539.133px;
+    z-index: 2;
+    height: 44px;
+    top:266px;
+}
+.picture_show2 li{
+    display: block;
+    float: left;    
+    width: 105px;
+    height: 44px;
+    line-height: 44px;
+}
+.picture_show2 li a{
+    display: block;
+    float: left;    
+    width: 120px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius:6px;
+    color:rgb(215, 214, 172);
+}
+.picture_show2 li:hover>a {
+    color:rgb(39, 48, 3);
+    text-shadow: 5px 0px 5px;
+    background-color: rgb(144, 235, 208, 0.433);
+}
+.picture_show2 li  > .active
+{
+    color:rgb(39, 48, 3);
+    text-shadow: 5px 0px 5px;
+    background-color: rgb(144, 235, 208, 0.433);
+}
+
+/* 中间的样式 */
+.mid_new{   
+    width: 360px;
+    height: 310px;
+    top:-277px;
+    left:575px;
+    display: block;
+    position: relative;
+    border-radius: 6px;
+    background-color:  #619278;
+    overflow: hidden;   
+} 
+.mid_new1
+{
+    position: absolute;
+    background-color: #101111;
+    overflow: hidden;
+    width: 580px;
+    z-index: 2;
+    height: 44px;
+    top:0px;
+} 
+.mid_new1 li{
+    display: block;
+    float: left;    
+    width: 73px;
+    height: 44px;
+    line-height: 44px;
+}
+.mid_new1 li a{
+    display: block;
+    float: left;    
+    width: 68px;
+    height: 44px;
+    line-height: 44px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius:6px;
+    color:rgb(215, 214, 172);
+}
+.mid_new1 li:hover>a {
+    color:rgb(39, 48, 3);
+    text-shadow: 5px 0px 5px;
+    background-color: rgb(144, 235, 208, 0.433);
+}
+.mid_new1 li > .active
+{
+    color:rgb(39, 48, 3);
+    text-shadow: 5px 0px 5px;
+    background-color: rgb(144, 235, 208, 0.433);
+}
+.mid_new2
+{   
+    top:52px;
+    /* top: -230px; */
+    /* top: -510px; */
+    /* 一次是第一个信息到第五个信息 */
+    height: 266px;
+    width: 360px;
+    position:absolute;
+    display: block;
+}
+.one
+{
+    position:relative;
+    display: block;
+    height: 266px;
+    width: 360px;
+    /* top: -266px; */
+    }
+.two{
+    /* position:relative; */
+    display: block;
+    height: 266px;
+    width: 360px;
+}
+.mid_new2 ul li 
+{
+    color: #b8b9c5;
+    height: 50px;
+    line-height: 50 px;
+    overflow: hidden;
+    font-size: 14px;
+    margin-left: -32px;
+    float: left;
+    display:block;
+    list-style: none;
+    text-decoration: none;
+    color: #363636;
+    font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+
+}
+.mid_new2 ul li a:hover >span
+{
+    color:rgb(215, 214, 172);
+    text-shadow: 5px 0px 5px;
+}
+.hot_news
+{
+    text-decoration: none;
+    color: #363636;
+    font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+
+}
+.new_news
+{
+    text-decoration: none;
+    color: #363636;
+    font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+}
+/* 右边的王者营地和荣耀传承 */
+.right_object{  
+    width: 320px;
+    height: 310px;
+    top:33px; 
+    left:971px;
+    display: block;
+    position: absolute;
+    empty-cells: show;
+    border-radius: 6px;
+    background-color:  #619278;
+    background-image: url("Timage/stategy_bg_4def7a7.jpg");
+    /* border:2px solid #949a98; */
+    /* padding:0;margin: 0;-webkit-margin-before: 0;-webkit-margin-after: 0; */
+    overflow: hidden;   
+}
+.right_object ul li 
+{   
+    display: block;
+    /* width: 291px;
+    height: 140px; */
+}
+.right_object ul li a{
+    position: relative;
+    width:100vw;
+    height:31vh;
+}
+.right_object ul li a div{
+    text-decoration: none;  
+    display: block;
+    width: 292px;
+    height: 134px;
+    padding-bottom: 8px;
+    margin-left: -25px;
+    overflow: hidden;
+}
+.right_object ul li a div img 
+{
+    width: 100%;
+    transition: all 0.5s;
+}
+/* 鼠标滑动图片样式 */
+.right_object ul li a div:hover>img {
+    transform: scale(1.1);
+    /* background-color: #101111; */
+    }
+.button_info
+{
+    width:1920px;
+    height:246px;
+    background-color:rgba(0,0,0,0.3);
+    position:absolute;
+    top:548px;
+    text-align: center;
+    overflow: hidden;   
+}
+.official_code
+{
+    width: 800px;
+    height: 180px;
+    position: absolute;  
+    top:33px;
+    left: 570px;
+    display: block;
+    /* background-color: #101111; */
+    background-image: url("Timage/stategy_bg_4def7a7.jpg");
+    border-radius: 6px;
+} 
+.official_code ul
+{
+    margin: auto;
+    padding: 0%;
+}
+.official_code ul li{
+    display: inline-flex;
+    border-radius: 6px;
+    width: 130px;
+    height: 166px;
+    margin-top: 6px;
+    margin-left: 6px;
+    /* background-color: #619278; */
+}
+.official_code ul li div{
+    width: 100px;
+    position: relative;
+    height: 117px;
+    display: block;
+    top: -26px;
+    left: 13px;
+    background-image: url("Timage/code_bg_6c844a8.png");
+}
+.official_code ul li div img
+{
+    position: absolute;
+    top: 18px;
+    left: 13px;
+}
+/* 关键帧放缩地展示二维码 */
+@keyframes key_show {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}   
+.weixin_show{
+    display: block;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.weixin_hidden{
+    display: none;
+    width: 74px;
+    height: 74px;
+    transform: scale(0.1);
+}
+.official_code ul li div:hover>.weixin_show{
+    display: none;
+}
+.official_code ul li div:hover>.weixin_hidden{
+    display: block;
+    animation-name: key_show;
+    animation-duration: 1s;
+    transform: scale(1);
+    /* transition: all .4s ease; */
+} 
+.video_show{
+    display: block;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.video_hidden{
+    display: none;
+    width: 74px;
+    height: 74px;
+}
+.official_code ul li div:hover>.video_show{
+    display: none;
+}
+.official_code ul li div:hover>.video_hidden{
+    display: block;
+    animation-name: key_show;
+    animation-duration: 1s;
+} 
+.camp_show{
+    display: block;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.camp_hidden{
+    display: none;
+    width: 74px;
+    height: 74px;
+}
+.official_code ul li div:hover>.camp_show{
+    display: none;
+    transition: 4s ease;
+}
+.official_code ul li div:hover>.camp_hidden{
+    display: block;
+    animation-name: key_show;
+    animation-duration: 1s;
+} 
+.weibo_show{
+    display: block;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.weibo_hidden{
+    display: none;
+    width: 74px;
+    height: 74px;
+}
+.official_code ul li div:hover>.weibo_show{
+    display: none;
+}
+.official_code ul li div:hover>.weibo_hidden{
+    display: block;
+    animation-name: key_show;
+    animation-duration: 1s;
+}       
+.official_code ul li span{
+
+    position: absolute;
+    display:block;
+    width: 124px;
+    top:148px;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    /* margin-left: 33px; */
+    text-align: center;
+}
+.bottom_lefPicture{
+    display: none;
+}
+.bottom_midPicture{
+    display: block;
+}
+.bottom_rigPicture{
+    display: none;
+    margin-left: -30px;
+}
